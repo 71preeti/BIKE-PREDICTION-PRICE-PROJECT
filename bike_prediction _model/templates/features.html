@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoValuator - Features</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                
+                <li><a href="{{ url_for('about') }}">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="features">
+        <div class="container">
+            <h2>Features</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-bg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXQYxtf2zCQhD8eyLo3tPZMG5eyzxxzyCrcg&s');"></div>
+                    <div class="feature-content">
+                        <h3>Accurate Price Prediction</h3>
+                        <p>Our advanced algorithms provide precise price predictions based on multiple factors like age, mileage, and brand.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-bg" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/44/172/867/suzuki-gsx-r-bike-white-sports-bike-wallpaper-preview.jpg');"></div>
+                    <div class="feature-content">
+                        <h3>Wide Range of Models</h3>
+                        <p>MotoValuator supports a broad spectrum of bike brands and models, ensuring you get the right value for any bike.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-bg" style="background-image: url('https://c4.wallpaperflare.com/wallpaper/380/460/867/suzuki-gsxr-750-1200x800-motorcycles-suzuki-hd-art-wallpaper-preview.jpg');"></div>
+                    <div class="feature-content">
+                        <h3>Easy to Use</h3>
+                        <p>Our user-friendly interface allows you to quickly and easily input your bike details for an instant valuation.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-bg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTetfSmzTu9ZYkjZbR09yYgdTNYMl4KxNrnWL6wLmeI9hbFMm988QiB6IKiGtRfTO00xGo&usqp=CAU');"></div>
+                    <div class="feature-content">
+                        <h3>Data-Driven Insights</h3>
+                        <p>We leverage machine learning to provide insights that help you understand the market value of your bike.</p>
+                    </div>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-bg" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTN61g6p3K0VyYIe4Dslvvr4duWKBg2agmpV22ikZ0FfI4X2GmPs2bq0y2CoPTJNfuKvqI&usqp=CAU');"></div>
+                    <div class="feature-content">
+                        <h3>Fast and Efficient</h3>
+                        <p>Get quick processing and instant results with MotoValuator’s highly optimized algorithms.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 MotoValuator. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <style>
+        body {
+            background: url('');
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background-color:#333;
+            padding: 15px 0;
+        }
+        
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: #ff4500;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #f0f0f0;
+        }
+        
+        section#features {
+            padding: 50px 0;
+        }
+        
+        section#features h2 {
+            font-size: 36px;
+            text-align: center;
+            margin-bottom: 50px;
+            color: #ff4500;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            justify-items: center;
+        }
+
+        .feature-card {
+            display: flex;
+            flex-direction: column;
+            width: 250px;
+            height: 250px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .feature-bg {
+            flex: 1;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .feature-content {
+            padding: 15px;
+            text-align: center;
+            color: #f0f0f0;
+        }
+
+        .feature-content h3 {
+            font-size: 18px;
+            color: #ff4500;
+            margin-bottom: 10px;
+        }
+
+        .feature-content p {
+            font-size: 14px;
+        }
+
+        footer {
+            padding: 20px 0;
+            background-color: #333;
+            text-align: center;
+            color: #f0f0f0;
+        }
+    </style>
+</body>
+</html>

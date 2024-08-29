@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MotoValuator - Estimated Price</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background:  url('https://e0.pxfuel.com/wallpapers/546/57/desktop-wallpaper-heartbeat-dreamscene-video.jpg');
+            background-size: fixed;
+            color: #fff;
+            margin: 0;
+            padding: 100px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #ffcc00;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2em;
+            color: #ddd;
+            margin-bottom: 20px;
+        }
+
+        #pred {
+            margin-top: 30px;
+            font-size: 2em;
+            color: #00ff00;
+            font-weight: bold;
+        }
+
+        .btn-custom {
+            width: 20%;
+            padding: 10px;
+            margin: 20px auto;
+            border-radius: 25px;
+            border: none;
+            font-size: 1em;
+            background-color: #ffcc00;
+            color: #000;
+            cursor: pointer;
+            text-decoration: none;
+            display: block;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-custom:hover {
+            background-color: #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <h1>Estimated Price</h1>
+    <h3 id="pred">Estimated Price 👉: ₹{{ prediction_text }}</h3>
+    <br>
+    <p><b>Selected Brand:</b> {{ brand_name }}</p>
+    <p><b>Kilometers Driven:</b> {{ Kms_Driven }} km</p>
+    <p><b>Number of Previous Owners:</b> {{ owner }}</p>
+    <p><b>Years Used:</b> {{ age }} years</p>
+    <p><b>Engine Power (CC):</b> {{ power }} CC</p>
+    <br>
+    <a href="/" class="btn-custom">Back to Home</a>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
